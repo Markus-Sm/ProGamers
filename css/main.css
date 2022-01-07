@@ -1,0 +1,490 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ebecf2;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+  margin: 0 auto 40px;
+}
+
+.blue-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 100;
+}
+
+nav .nav-link {
+  color: #fff;
+}
+
+nav .nav-link:hover {
+  color: #039dff;
+}
+
+nav .fa-bars {
+  color: #fff;
+  font-size: 28px;
+  padding: 5px;
+}
+
+nav .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav .active {
+  color: #039dff;
+}
+
+header {
+  color: #fff;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+header p {
+  font-size: 14px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/playstation-small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  z-index: 5;
+  padding: 10px;
+  text-align: center;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  font-size: 30px;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+}
+
+.aboutus {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url("https://cdn.pixabay.com/photo/2017/10/05/08/20/technology-2818664_960_720.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.aboutus-hero .fab {
+  font-size: 36px;
+}
+
+.aboutus-hero .aboutus-hero-title {
+  font-size: 24px;
+}
+
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+
+.portfolio {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio h2 {
+  color: #000;
+}
+
+.portfolio .carousel {
+  position: relative;
+}
+
+.portfolio .carousel .carousel-item {
+  position: relative;
+}
+
+.portfolio .carousel img {
+  height: 40vh;
+}
+
+.portfolio .carousel .carousel-shadow {
+  position: absolute;
+  bottom: 20px;
+  height: 25%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .carousel .carousel-indicators {
+  padding-bottom: 15px;
+}
+
+.row .card {
+  height: 370px;
+}
+
+.row img {
+  height: 200px;
+}
+
+.price-box {
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  -webkit-box-shadow: 5px 10px 15px #333;
+          box-shadow: 5px 10px 15px #333;
+  margin-bottom: 50px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.price-box h3 {
+  text-transform: uppercase;
+  color: #039dff;
+}
+
+.price-box span {
+  font-weight: bold;
+}
+
+.price-box .price-tag {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.price-box i {
+  font-size: 24px;
+  padding: 0 5px;
+}
+
+.price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.price-box:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.price-info {
+  font-size: 16px;
+}
+
+.text-muted {
+  font-size: 16px;
+}
+
+.team {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/23/16/03/iocenters-2673316_960_720.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 5;
+}
+
+.team h2 {
+  color: #ddd;
+  z-index: 5;
+}
+
+.team .bg-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: -1;
+}
+
+.team .card {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  border: none;
+  z-index: 1;
+}
+
+.team .card i {
+  padding: 10px;
+}
+
+.team .card .card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.team .card .text-muted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  border: none;
+}
+
+.team .card-title {
+  margin-bottom: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.achievements .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.achievements i {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.achievements h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.achievements p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.contact {
+  background-image: url("../img/skyline-big.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  z-index: 0;
+}
+
+.contact .bg-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.85);
+  top: 0;
+  z-index: -1;
+}
+
+.contact h2 {
+  color: #ddd;
+  font-weight: bold;
+}
+
+.contact .underline {
+  background-color: #ddd;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.contact i {
+  color: #fff;
+  font-size: 26px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.contact i:hover {
+  color: #ddd;
+}
+
+.contact .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .social-media .fab {
+  padding: 0px 10px;
+}
+
+.contact .contact-item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutus-hero {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/05/08/20/technology-2818664_960_720.jpg");
+  }
+  .price-info {
+    font-size: 18px;
+  }
+  .text-muted {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/playstation-big.jpg");
+  }
+}
+/*# sourceMappingURL=main.css.map */
